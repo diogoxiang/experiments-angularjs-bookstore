@@ -1,0 +1,26 @@
+<table class="table table-bordered" data-ng-cloak>
+    <tr class="book" ng-repeat="book in books | filter:query track by book.title">
+        <td class="row">
+            <div class="col-md-3 text-center">
+                <img class="book-image" data-ng-src="{{ book.image }}" width="128" />
+                <ul class="text-muted unstyled">
+                    <li>Category: {{ book.category }}</li>
+                    <li>In stock: {{ book.quantity }}</li>
+                </ul>
+                <button type="button" class="btn btn-danger btn-small book-delete"
+                        ng-click="removeBookModal( book )">Delete</button>
+                &nbsp;
+                <button type="button" class="btn btn-small book-edit"
+                        ng-click="editBookModal( book.id )">Edit</button>
+            </div>
+            <div class="col-md-8">
+                <p><em>{{ book.author }}</em></p>
+                <p><strong>{{ book.title }}</strong></p>
+                <p>{{ book.description }}</p>
+            </div>
+        </td>
+        <td class="col-md-2">
+            <div data-book-price></div>
+        </td>
+    </tr>
+</table>

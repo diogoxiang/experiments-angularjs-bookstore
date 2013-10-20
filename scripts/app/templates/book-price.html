@@ -1,0 +1,14 @@
+<div ng-switch on=" book | price:{ type: 'discount' } ">
+    <div ng-switch-when="0">
+        <big class="book-price">${{ book | price:{ type: 'priceCurrent' } }}</big>
+    </div>
+
+    <div ng-switch-default>
+        <span class="book__price_old_true text-muted">
+            ${{ book | price:{ type: 'priceCurrent' } }}
+        </span>
+        <big class="book-price">${{ book | price:{ type: 'priceNew' } }}</big>
+        <br />
+        <small class="book-discount">(discount {{ book | price:{ type: 'discount' } }}%)</small>
+    </div>
+</div>

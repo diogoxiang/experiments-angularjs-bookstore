@@ -1,0 +1,69 @@
+<div id="modal-book" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" data-ng-bind="modalBookTextTitle">Lovely modal</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form name="bookForm" class="form-horizontal">
+                    <div class="control-group">
+                        <h4>Title</h4>
+                        <p><input name="title" class="form-control" type="text"
+                                  ng-model="modalBook.title" required /></p>
+                    </div>
+                    <div class="control-group">
+                        <h4>Author</h4>
+                        <p><input name="author" class="form-control" type="text"
+                            ng-model="modalBook.author" required /></p>
+                    </div>
+                    <div class="control-group">
+                        <h4>Description</h4>
+                        <p><textarea name="description" class="form-control" rows="5"
+                            ng-model="modalBook.description" required></textarea></p>
+                    </div>
+                    <div class="control-group">
+                        <h4>Category</h4>
+                        <p>
+                            <select name="category" class="form-control"
+                                    ng-model="modalBook.category" required>
+                                <option value="literature">Literature</option>
+                                <option value="cookbook">Cookbook</option>
+                                <option value="computers">Computers</option>
+                                <option value="business">Business</option>
+                                <option value="science">Science</option>
+                                <option value="fantasy">Sci-Fi and Fantasy</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="control-group">
+                        <h4>Price</h4>
+                        <p>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input name="price" class="form-control" type="text"
+                                       ng-model="modalBook.price" required
+                                       ng-pattern="/^\d+(\.\d+)?$/"
+                                       placeholder="10.00" />
+                            </div>
+                        </p>
+                    </div>
+                    <div class="control-group">
+                        <h4>Quantity</h4>
+                        <p><input name="quantity" class="form-control" type="text"
+                                  ng-model="modalBook.quantity" required
+                                  ng-pattern="/^\d+$/"
+                                  placeholder="15" /></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+        <button type="button" class="btn btn-primary"
+                ng-click="saveBook( modalBook )"
+                data-ng-disabled="bookForm.$invalid"
+                data-ng-bind="modalBookTextSaveButton">Save changes</button>
+    </div>
+</div><!-- #modal-book -->
