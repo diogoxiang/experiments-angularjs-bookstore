@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1e827285-06ef-4229-b16a-b19f067601a9",
+        "title": "The Brain That Changes Itself",
+        "image": "./styles/images/covers/brain.jpg",
+        "author": "Norman Doidge",
+        "description": "An astonishing new science called neuroplasticity is overthrowing the centuries-old notion that the human brain is immutable. Psychiatrist and psychoanalyst, Norman Doidge, M.D., traveled the country to meet both the brilliant scientists championing neuroplasticity and the people whose lives they've transformed people whose mental limitations or brain damage were seen as unalterable. We see a woman born with half a brain that rewired itself to work as a whole, blind people who learn to see, learning disorders cured, IQs raised, aging brains rejuvenated, stroke patients learning to speak, children with cerebral palsy learning to move with more grace, depression and anxiety disorders successfully treated, and lifelong character traits changed. Using these marvelous stories to probe mysteries of the body, emotion, love, sex, culture, and education, Dr. Doidge has written an immensely moving, inspiring book that will permanently alter the way we look at our brains, human nature, and human potential.",
+        "category": "science",
+        "quantity": 100,
+        "price": 18.09
+    },
+    {
+        "id": "831d4175-bd5e-4222-ac80-f37c4f8bf7da",
+        "title": "Starship Troopers",
+        "author": "Robert A. Heinlein",
+        "description": "Starship Troopers is a classic novel by one of science fiction's greatest writers of all time and is now a Tri-Star movie. In one of Heinlein's most controversial bestsellers, a recruit of the future goes through the toughest boot camp in the universe -- and into battle with the Terran Mobile Infantry against mankind's most frightening enemy.",
+        "category": "literature",
+        "quantity": 500,
+        "price": 20.69,
+        "image": "./styles/images/covers/troopers.jpg"
+    },
+    {
+        "id": "f4f695db-ebec-41ff-89cb-0d8c47d2fbd6",
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "description": "Thrown in prison for a crime he has not committed, Edmond Dantès is confined to the grim fortress of If. There he learns of a great hoard of treasure hidden on the Isle of Monte Cristo and he becomes determined not only to escape, but also to unearth the treasure and use it to plot the destruction of the three men responsible for his incarceration. Dumas' epic tale of suffering and retribution, inspired by a real-life case of wrongful imprisonment, was a huge popular success when it was first serialised in the 1840s.",
+        "category": "literature",
+        "quantity": 42,
+        "price": 17.27,
+        "image": "./styles/images/covers/count.jpg"
+    },
+    {
+        "id": "68fde6f7-0420-4469-a0d7-aa8c4b8ffb77",
+        "title": "The Prince",
+        "author": "Niccolò Machiavelli",
+        "description": "Widely read for its insights into history and politics, The Prince is one of the most provocative works of the Italian Renaissance. Based on Niccolò Machiavelli’s observations of the effectiveness of both ancient and contemporary statesmen, the rules for governing set forth in his manual were considered radical and harsh by his contemporaries and shocking to many since then. This major new edition combines an accurate and accessible new translation with important related documents, many of which appear here in English for the first time. In his lucid introductory essay, William J. Connell offers fresh insights into Machiavelli’s life, the meaning of his work, the context in which it was written, and its influence over time. Document headnotes, maps, a chronology of Machiavelli’s life, questions for consideration, a selected bibliography, and index provide further pedagogical support.",
+        "category": "literature",
+        "quantity": 39,
+        "price": 12.06,
+        "image": "./styles/images/covers/prince.jpg"
+    },
+    {
+        "id": "bae857e8-ffb1-4ff5-9319-010c3c5db6cb",
+        "title": "The Vampire Lestat",
+        "author": "Anne Rice",
+        "description": "Once an aristocrat in the heady days of pre-revolutionary France, now Lestat is a rockstar in the demonic, shimmering 1980s. He rushes through the centuries in search of others like him, seeking answers to the mystery of his terrifying exsitence. His story, the second volume in Anne Rice's best-selling Vampire Chronicles, is mesmerizing, passionate, and thrilling",
+        "category": "literature",
+        "quantity": 230,
+        "price": 11.94,
+        "image": "./styles/images/covers/vampire.jpg"
+    },
+    {
+        "id": "5a9f9d63-30d2-4186-adbf-c58decb7fef5",
+        "title": "Playing to Win: Becoming the Champion",
+        "image": "./styles/images/covers/playing.jpg",
+        "author": "David Sirlin",
+        "description": "Winning at competitive games requires a results-oriented mindset that many players are simply not willing to adopt. This book walks players through the entire process: how to choose a game and learn basic proficiency, how to break through the mental barriers that hold most players back, and how to handle the issues that top players face. It also includes a complete analysis of Sun Tzu's book The Art of War and its applications to games of today. These foundational concepts apply to virtually all competitive games, and even have some application to \"real life.\"",
+        "category": "business",
+        "quantity": 110,
+        "price": 14.85
+    },
+    {
+        "id": "0df6ba7b-ce23-4319-80ea-4c621490ecfa",
+        "title": "The Inner Game of Tennis: The Classic Guide to the Mental Side of Peak Performance",
+        "author": "W. Timothy Gallwey",
+        "description": "The Inner Game of Tennis is a revolutionary program for overcoming the self-doubt, nervousness, and lapses of concentration that can keep a player from winning. Now available in a revised paperback edition, this classic bestseller can change the way the game of tennis is played.",
+        "category": "business",
+        "quantity": 110,
+        "price": 56.49,
+        "image": "./styles/images/covers/tennis.jpg"
+    }
+]
