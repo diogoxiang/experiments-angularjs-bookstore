@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookstore CMS prototype</title>
+
+    <!-- @todo build script -->
+    <link href="./styles/vendor/bootstrap-flatly/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="./styles/vendor/bootstrap-modal/bootstrap3-patch.css" rel="stylesheet" media="screen">
+    <link href="./scripts/vendor/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" media="screen">
+    <link href="./scripts/vendor/pnotify/jquery.pnotify.default.css" rel="stylesheet" media="screen">
+    <!-- @todo move to css file -->
+    <style>
+    .book__price { font-weight: 700; color: green; }
+    .book__price_old_true { text-decoration: line-through; }
+    .book__discount { white-space: nowrap; display: block; }
+    .bookslist { margin-top: 80px; }
+    .unstyled { margin-left: 0; padding-left: 0; }
+    .unstyled li { list-style: none; }
+    [data-ng-cloak] { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="l-window" ng-controller="bookstoreController">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bookstore CMS</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" ng-click="addBookModal()">+ Add a book</a></li>
+                    </ul>
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control col-lg-8"
+                           placeholder="Search" ng-model="query">
+                </form>
+                <ul class="nav navbar-nav navbar-right" ng-controller="poniesController">
+                    <li><a href="#" ng-click="addPonies()">Add ponies</a></li>
+                </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </div>
+
+
+        <div class="container bookslist">
+            <div class="well" data-ng-hide="true">Loading...</div>
+            <div ng-include="'./scripts/app/templates/books-list.html'"></div>
+        </div>
+
+        <div ng-include="'./scripts/app/templates/modals/book.html'"></div>
+        <div ng-include="'./scripts/app/templates/modals/remove.html'"></div>
+
+    </div><!-- .l-window bookstoreController -->
+
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-15082937-7']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <!-- @todo build script and versions -->
+    <script src="./scripts/vendor/requirejs/require.js"
+            data-main="./scripts/main"></script>
+
+</body>
+</html>
